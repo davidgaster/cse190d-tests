@@ -9,4 +9,5 @@ MAKE SURE YOU:
 2. add test files test.7 - test.11
 
 run make
+
 run ./src/badgerdb_main
