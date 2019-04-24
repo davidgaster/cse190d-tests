@@ -591,7 +591,6 @@ void test11() {
 		bufMgr->unPinPage(file11ptr, pid[i], true);
 	}
 
-	// Check the dirty bit of all unpinned pages
 	for (i = 0; i < num; i++)
 	{
 		try {
