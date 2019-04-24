@@ -1,6 +1,6 @@
 # cse190d-tests
 
-CSE190D Test Suite fo Buffer Manager
+CSE190D Test Suite for Buffer Manager
 
 Clone this directory and cp the files into your BadgerDB src directory
 
