@@ -30,7 +30,7 @@ char tmpbuf[100];
 BufMgr* bufMgr;
 File *file1ptr, *file2ptr, *file3ptr, *file4ptr, *file5ptr,
      *file7ptr, *file8ptr, *file9ptr, *file10aptr, *file10bptr,
-		 *file11ptr, *file12ptr;
+		 *file11ptr;
 
 void test1();
 void test2();
@@ -128,7 +128,6 @@ void testBufMgr()
   const std::string& filename10a = "test.10a";
   const std::string& filename10b = "test.10b";
 	const std::string& filename11 = "test.11";
-  const std::string& filename12 = "test.12";
 
   try
 	{
@@ -143,7 +142,6 @@ void testBufMgr()
     File::remove(filename10a);
     File::remove(filename10b);
 		File::remove(filename11);
-    File::remove(filename12);
   }
 	catch(FileNotFoundException e)
 	{
@@ -160,7 +158,6 @@ void testBufMgr()
 	File file10a = File::create(filename10a);
 	File file10b = File::create(filename10b);
 	File file11 = File::create(filename11);
-	File file12 = File::create(filename12);
 
 	file1ptr = &file1;
 	file2ptr = &file2;
@@ -173,7 +170,6 @@ void testBufMgr()
 	file10aptr = &file10a;
 	file10bptr = &file10b;
 	file11ptr = &file11;
-	file12ptr = &file12;
 
 	//Test buffer manager
 	//Comment tests which you do not wish to run now. Tests are dependent 
@@ -207,7 +203,6 @@ void testBufMgr()
 	file10a.~File();
 	file10b.~File();
 	file11.~File();
-	file12.~File();
 
 
 	delete bufMgr;
@@ -224,7 +219,6 @@ void testBufMgr()
 	File::remove(filename10a);
 	File::remove(filename10b);
 	File::remove(filename11);
-	File::remove(filename12);
 
 	std::cout << "\n" << "Passed all tests." << "\n";
 }
