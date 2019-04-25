@@ -46,7 +46,6 @@ void test8b();
 void test9();
 void test10(); 
 void test11();
-void test12();
 void testBufMgr();
 
 int main() 
@@ -195,7 +194,6 @@ void testBufMgr()
 	test9(); 
 	test10(); 
 	test11();
-	test12();
 
 	//Close files before deleting them
 	file1.~File();
